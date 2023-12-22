@@ -5,6 +5,7 @@ from nltk import ngrams
 from connection import sql_connection  # Modul yang berisi fungsi koneksi ke database
 from collections import namedtuple
 
+
 # Fungsi untuk menghitung tingkat kemiripan n-gram antara dua teks
 def ngram_similarity(query, text, n=3):
     # Membuat himpunan n-gram dari query dan teks
@@ -102,7 +103,7 @@ def main():
         [sg.Text("", size=(90, 1), key='-STATUS-', relief=sg.RELIEF_RIDGE, justification='center')],
     ]
 
-    window = sg.Window("Data Presentation", layout)
+    window = sg.Window("Versi 1", layout)
 
     while True:
         event, values = window.read()

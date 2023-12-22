@@ -85,7 +85,7 @@ def main():
     ]
 
     # Membuat window GUI
-    window = sg.Window("Aplikasi Data Presentation", layout)
+    window = sg.Window("Versi 2", layout)
 
     while True:
         # Mendengarkan event pada GUI
